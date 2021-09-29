@@ -1,0 +1,11 @@
+Expressão: !(!X && X) && (!X || X)
+Primeira parte: !(!X && X)
+    !X && X sempre será falso. Logo !(!X && X) sempre será verdadeiro
+
+Expressão: True && (!X || X)
+Segunda parte: !X || X
+    !X || X sempre terá o valor verdadeiro como resultado.
+
+Expressão: True && True = True
+
+Respondendo também a questão 8, a expressão fornecida sempre terá retorno verdadeiro independente do valor de X, pois se trata te uma tautologia.
