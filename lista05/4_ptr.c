@@ -4,14 +4,14 @@
 
 int ordenado(int * vet, int len) {
     int menor, aux;
-    for (int i = 0; i < (len-1); ++i) {
+    for(int i = 0; i < len; ++i) {
         menor = i;
         
-        for(int j = (i+1); j < len; ++j)
+        for(int j = i + 1; j < len; ++j)
             if(vet[j] < vet[menor])
                 menor = j;
 
-        if (i != menor) {
+        if(i != menor) {
             aux = vet[i];
             vet[i] = vet[menor];
             vet[menor] = aux;
